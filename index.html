@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/header.png" alt="Jimmy's Diner, The best burgers and pizzas in town.">
+    </header>
+    <main>
+        <section class="items">
+            <ul id="items-list" class="items-list">
+                <li class="item">
+                    <div class="item-image">
+                        🍕
+                    </div>
+                    <div class="item-text">
+                        <p class="item-name">Pizza</p>
+                        <p class="item-ingredients">pepperoni,mushrom,mozarella</p>
+                        <p class="item-price">$14</p>
+                    </div>
+                    <button class="item-add-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section id="ordered-items" class="ordered-items hidden">
+            <p>Your order</p>
+            <ul id="ordered-items-list" class="ordered-items-list">
+                <li class="ordered-item">
+                    <p>Pizza</p>
+                    <button class="item-remove-btn">remove</button>
+                    <!-- set it to same font size as item-price -->
+                    <p class="item-price">$14</p>
+                </li>
+                <li class="ordered-item">
+                    <p>Beer</p>
+                    <button class="item-remove-btn">remove</button>
+                    <p class="item-price">$12</p>
+                </li>
+                <li class="ordered-item total-price">
+                    <p>Total price:</p>
+                    <p class="item-price">$26</p>
+                </li>
+            </ul>
+            <button id="order-btn" class="payment-btn">Complete order</button>
+        </section>
+        <div id="payment-modal" class="payment-modal hidden">
+            <p class="payment-modal-title">Enter card details</p>
+            <form class="payment-modal-form">
+                <input name="name" type="text" placeholder="Enter your name" required>
+                <input name="number" type="text" pattern="\d{16}" placeholder="Enter card number" required>
+                <input name="cvv" type="text" pattern="\d{3}" placeholder="Enter CVV" required>
+                <button type="submit" class="payment-btn pay-btn">Pay</button>
+            </form>
+        </div>
+        <section id="thanks-section" class="thanks-section hidden">
+            <div class="thanks">
+                <p>Thanks, James! Your order is on its way!</p>
+                <p>Feedback: </p>
+                <div class="rating">
+                    <i id="star-1" class="fa-regular fa-star"></i>
+                    <i id="star-2" class="fa-regular fa-star"></i>
+                    <i id="star-3" class="fa-regular fa-star"></i>
+                    <i id="star-4" class="fa-regular fa-star"></i>
+                    <i id="star-5" class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

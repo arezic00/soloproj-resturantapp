@@ -1,0 +1,191 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: "Smythe", system-ui;
+    font-size: 28px;
+}
+
+/* Typography */
+
+p {
+    margin: 0;
+}
+
+.item-name {
+    font-size: 28px;
+}
+
+.item-ingredients {
+    font-size: 16px;
+    color: #8b8b8b;
+}
+
+.item-price {
+    font-size: 24px;
+}
+
+.item-text .item-price {
+    margin-top: 12px;
+}
+
+.payment-modal-title {
+    font-weight: bold;
+    margin: 25px 0 45px;
+
+}
+
+/* Layout */
+
+header,
+main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    padding: 0 36px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+
+}
+
+.item {
+    border-bottom: #d2d2d2 1px solid;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.item-image {
+    font-size: 80px
+}
+
+i {
+    margin: auto;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.ordered-items {
+    text-align: center;
+}
+
+.ordered-items-list {
+    margin-top: 20px;
+}
+
+.ordered-item .item-price {
+    margin-left: auto;
+}
+
+.total-price {
+    border-top: black solid 2px;
+    margin: 20px 0 30px;
+}
+
+.payment-modal {
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    box-shadow: 0px 0px 100px 30px #bbb;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.payment-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: #757575 2px solid;
+}
+
+.thanks {
+    background-color: #ecfdf5;
+    color: #065f46;
+    font-size: 32px;
+    text-align: center;
+    padding: 45px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Buttons and links */
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.item-remove-btn {
+    background-color: transparent;
+    color: #bbb;
+}
+
+.item-add-btn {
+    margin-left: auto;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: #dedede 1px solid;
+    border-radius: 50%;
+    display: flex;
+}
+
+.payment-btn {
+    background-color: #16db99;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.pay-btn {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Utility classes */
+
+.t {
+    border: blue solid 2px;
+}
